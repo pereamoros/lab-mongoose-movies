@@ -1,0 +1,11 @@
+<h2>Celebrities</h2>
+<div class="celebrity-list">
+  <% for (var i = 0; i < celeb.length; i++ ){ %>
+    <div class="celebrity-item">
+        <p> <a href="/celebrities/<%= celeb[i].name %>"><%= celeb[i].name %></a> </p>
+    </div>
+  <% } %>
+</div>
+<div>
+  <a href="/celebrities/new">Insert a new Celebrity</a>
+</div>
