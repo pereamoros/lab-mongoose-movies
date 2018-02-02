@@ -1,0 +1,18 @@
+<h2>Edit Celebrity</h2>
+<form method="post" action="/celebrities/<%= id %>">
+  <div>
+    <label for="name">Celebrity Name: </label>
+    <input type="text" name="name" id="drone-name" value="<%= name %>" />
+  </div>
+  <div>
+    <label for="occupation">Occupation: </label>
+    <input type="text" name="occupation" id="occupations" value="<%= occupation %>"/>
+  </div>
+  <div>
+    <label for="quote">Quote</label>
+    <textarea name="quote" id="quote" cols="30" rows="10"><%= quote %></textarea>
+  </div>
+  <div>
+    <button>Edit</button>
+  </div>
+</form>
