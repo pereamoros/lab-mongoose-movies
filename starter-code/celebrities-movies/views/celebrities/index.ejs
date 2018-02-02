@@ -2,7 +2,10 @@
 <div class="celebrity-list">
   <% for (var i = 0; i < celeb.length; i++ ){ %>
     <div class="celebrity-item">
-        <p> <a href="/celebrities/<%= celeb[i].name %>"><%= celeb[i].name %></a> </p>
+        <p> <a href="/celebrities/<%= celeb[i].id %>"><%= celeb[i].name %></a> </p>
+        <form method="post" action="/celebrities/<%= celeb[i].id %>/delete">
+          <button>&#x2716;</button>
+        </form>
     </div>
   <% } %>
 </div>
